@@ -26,6 +26,7 @@
 		E3B6D1B021FF4CCA0000D77C /* Bundle+plistPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D1AF21FF4CCA0000D77C /* Bundle+plistPath.swift */; };
 		E3B6D1B221FF4DF10000D77C /* plates.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3B6D1B121FF4DF10000D77C /* plates.plist */; };
 		E3B6D1B421FF4FCF0000D77C /* CloudKitFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D1B321FF4FCF0000D77C /* CloudKitFacade.swift */; };
+		E3B6D1B621FF61D30000D77C /* Array+toPlateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D1B521FF61D30000D77C /* Array+toPlateArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		E3B6D1AF21FF4CCA0000D77C /* Bundle+plistPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+plistPath.swift"; sourceTree = "<group>"; };
 		E3B6D1B121FF4DF10000D77C /* plates.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = plates.plist; sourceTree = "<group>"; };
 		E3B6D1B321FF4FCF0000D77C /* CloudKitFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitFacade.swift; sourceTree = "<group>"; };
+		E3B6D1B521FF61D30000D77C /* Array+toPlateArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+toPlateArray.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				E3B6D1AF21FF4CCA0000D77C /* Bundle+plistPath.swift */,
+				E3B6D1B521FF61D30000D77C /* Array+toPlateArray.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3B6D1B621FF61D30000D77C /* Array+toPlateArray.swift in Sources */,
 				E3B6D1A521FF47C70000D77C /* CloudKitService.swift in Sources */,
 				E3B6D1A321FF47C70000D77C /* CloudObject.swift in Sources */,
 				E3B6D1AD21FF4C240000D77C /* PlistService.swift in Sources */,

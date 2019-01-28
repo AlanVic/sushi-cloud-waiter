@@ -9,7 +9,12 @@
 import Foundation
 import UIKit
 
-struct Plates {
+class Plates {
     var image: UIImage?
     var name: String
+    
+    init(withName name: String, andImage image: UIImage?) {
+        self.image = image
+        self.name = name
+    }
 }

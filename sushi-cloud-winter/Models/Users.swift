@@ -12,18 +12,12 @@ import CloudKit
 struct Users: CloudObject {
     
     var recordID: CKRecord.ID?
-    var name: String?
     
     init() {
         
     }
     
     init(ckRecord: CKRecord) {
-        self.name = ckRecord["name"]
         self.recordID = ckRecord.recordID
-    }
-    
-    init(withName name: String) {
-        self.name = name
     }
 }

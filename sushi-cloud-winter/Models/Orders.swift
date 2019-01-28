@@ -31,4 +31,9 @@ struct Orders: CloudObject {
         self.orderDescription = orderDescription
         self.table = table
     }
+    
+    init(withPlates plates: [Plates], andTable table: Int) {
+        self.orderDescription = plates.plateString()
+        self.table = table
+    }
 }

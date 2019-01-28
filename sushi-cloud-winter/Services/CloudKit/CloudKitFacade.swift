@@ -9,7 +9,13 @@
 import Foundation
 
 struct CloudKitFacade {
-    func sendOrder(plates: [Plates]) {
+    func sendOrder(withPlates plates: [Plates],
+                   andTableNumber tableNumber: Int,
+                   result: @escaping (Orders?) -> (),
+                   errorCase: @escaping (Error?) -> ()) {
         
+        let order = Orders.init(withPlates: plates, andTable: tableNumber)
+        
+        order.save(result: result, errorCase: errorCase)
     }
 }
