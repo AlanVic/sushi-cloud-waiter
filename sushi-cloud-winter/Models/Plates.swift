@@ -1,5 +1,5 @@
 //
-//  CloudKitService.swift
+//  Plates.swift
 //  sushi-cloud-winter
 //
 //  Created by Elias Paulino on 28/01/19.
@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import UIKit
+
+struct Plates {
+    var image: UIImage?
+    var name: String
+}
