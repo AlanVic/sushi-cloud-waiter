@@ -14,9 +14,17 @@
 		92ECA34021FF404800551169 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ECA33E21FF404800551169 /* LaunchScreen.storyboard */; };
 		92ECA34B21FF404800551169 /* sushi_cloud_winterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA34A21FF404800551169 /* sushi_cloud_winterTests.swift */; };
 		E3B6D19321FF43090000D77C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B6D19221FF43090000D77C /* ViewController.xib */; };
-		E3B6D19921FF46E30000D77C /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D19821FF46E30000D77C /* CloudKitService.swift */; };
 		E3B6D19B21FF46F40000D77C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D19A21FF46F40000D77C /* Users.swift */; };
 		E3B6D19D21FF47000000D77C /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D19C21FF47000000D77C /* ExampleView.swift */; };
+		E3B6D1A321FF47C70000D77C /* CloudObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D19F21FF47C70000D77C /* CloudObject.swift */; };
+		E3B6D1A421FF47C70000D77C /* PredicateMounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D1A021FF47C70000D77C /* PredicateMounter.swift */; };
+		E3B6D1A521FF47C70000D77C /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D1A121FF47C70000D77C /* CloudKitService.swift */; };
+		E3B6D1A621FF47C70000D77C /* MounterOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D1A221FF47C70000D77C /* MounterOperation.swift */; };
+		E3B6D1A821FF49130000D77C /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D1A721FF49130000D77C /* Orders.swift */; };
+		E3B6D1AA21FF4B730000D77C /* Plates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D1A921FF4B730000D77C /* Plates.swift */; };
+		E3B6D1AD21FF4C240000D77C /* PlistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D1AC21FF4C240000D77C /* PlistService.swift */; };
+		E3B6D1B021FF4CCA0000D77C /* Bundle+plistPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D1AF21FF4CCA0000D77C /* Bundle+plistPath.swift */; };
+		E3B6D1B221FF4DF10000D77C /* plates.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3B6D1B121FF4DF10000D77C /* plates.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +49,17 @@
 		92ECA34A21FF404800551169 /* sushi_cloud_winterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sushi_cloud_winterTests.swift; sourceTree = "<group>"; };
 		92ECA34C21FF404800551169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3B6D19221FF43090000D77C /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		E3B6D19821FF46E30000D77C /* CloudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
 		E3B6D19A21FF46F40000D77C /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		E3B6D19C21FF47000000D77C /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		E3B6D19F21FF47C70000D77C /* CloudObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudObject.swift; sourceTree = "<group>"; };
+		E3B6D1A021FF47C70000D77C /* PredicateMounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredicateMounter.swift; sourceTree = "<group>"; };
+		E3B6D1A121FF47C70000D77C /* CloudKitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
+		E3B6D1A221FF47C70000D77C /* MounterOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MounterOperation.swift; sourceTree = "<group>"; };
+		E3B6D1A721FF49130000D77C /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
+		E3B6D1A921FF4B730000D77C /* Plates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plates.swift; sourceTree = "<group>"; };
+		E3B6D1AC21FF4C240000D77C /* PlistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistService.swift; sourceTree = "<group>"; };
+		E3B6D1AF21FF4CCA0000D77C /* Bundle+plistPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+plistPath.swift"; sourceTree = "<group>"; };
+		E3B6D1B121FF4DF10000D77C /* plates.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = plates.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +101,7 @@
 		92ECA33121FF404500551169 /* sushi-cloud-winter */ = {
 			isa = PBXGroup;
 			children = (
+				E3B6D1AE21FF4CB00000D77C /* Extensions */,
 				E3B6D19121FF42590000D77C /* Services */,
 				E3B6D19021FF424E0000D77C /* Models */,
 				E3B6D18F21FF42440000D77C /* Views */,
@@ -128,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				E3B6D19A21FF46F40000D77C /* Users.swift */,
+				E3B6D1A721FF49130000D77C /* Orders.swift */,
+				E3B6D1A921FF4B730000D77C /* Plates.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -135,9 +154,38 @@
 		E3B6D19121FF42590000D77C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				E3B6D19821FF46E30000D77C /* CloudKitService.swift */,
+				E3B6D1AB21FF4C120000D77C /* Lists */,
+				E3B6D19E21FF47920000D77C /* CloudKit */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E3B6D19E21FF47920000D77C /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6D1A121FF47C70000D77C /* CloudKitService.swift */,
+				E3B6D19F21FF47C70000D77C /* CloudObject.swift */,
+				E3B6D1A221FF47C70000D77C /* MounterOperation.swift */,
+				E3B6D1A021FF47C70000D77C /* PredicateMounter.swift */,
+			);
+			path = CloudKit;
+			sourceTree = "<group>";
+		};
+		E3B6D1AB21FF4C120000D77C /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6D1AC21FF4C240000D77C /* PlistService.swift */,
+				E3B6D1B121FF4DF10000D77C /* plates.plist */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		E3B6D1AE21FF4CB00000D77C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6D1AF21FF4CCA0000D77C /* Bundle+plistPath.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +272,7 @@
 				92ECA34021FF404800551169 /* LaunchScreen.storyboard in Resources */,
 				E3B6D19321FF43090000D77C /* ViewController.xib in Resources */,
 				92ECA33D21FF404800551169 /* Assets.xcassets in Resources */,
+				E3B6D1B221FF4DF10000D77C /* plates.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,11 +290,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3B6D19921FF46E30000D77C /* CloudKitService.swift in Sources */,
+				E3B6D1A521FF47C70000D77C /* CloudKitService.swift in Sources */,
+				E3B6D1A321FF47C70000D77C /* CloudObject.swift in Sources */,
+				E3B6D1AD21FF4C240000D77C /* PlistService.swift in Sources */,
+				E3B6D1A821FF49130000D77C /* Orders.swift in Sources */,
 				92ECA33B21FF404500551169 /* sushi_cloud_winter.xcdatamodeld in Sources */,
+				E3B6D1A621FF47C70000D77C /* MounterOperation.swift in Sources */,
 				E3B6D19B21FF46F40000D77C /* Users.swift in Sources */,
+				E3B6D1A421FF47C70000D77C /* PredicateMounter.swift in Sources */,
 				92ECA33521FF404500551169 /* ViewController.swift in Sources */,
+				E3B6D1AA21FF4B730000D77C /* Plates.swift in Sources */,
 				92ECA33321FF404500551169 /* AppDelegate.swift in Sources */,
+				E3B6D1B021FF4CCA0000D77C /* Bundle+plistPath.swift in Sources */,
 				E3B6D19D21FF47000000D77C /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
