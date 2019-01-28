@@ -4,9 +4,75 @@
 <array>
 	<dict>
 		<key>image</key>
-		<string>prato1</string>
+		<string>Chirashi</string>
 		<key>name</key>
-		<string>Sushizinho</string>
+		<string>Chirashi</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Gunkan</string>
+		<key>name</key>
+		<string>Gunkan</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Kombu</string>
+		<key>name</key>
+		<string>Kombu</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Nigiri</string>
+		<key>name</key>
+		<string>Nigiri</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Nori</string>
+		<key>name</key>
+		<string>Nori</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Norimaki</string>
+		<key>name</key>
+		<string>Norimaki</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Sashimi</string>
+		<key>name</key>
+		<string>Sashimi</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Sukiyaki</string>
+		<key>name</key>
+		<string>Sukiyaki</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Temaki</string>
+		<key>name</key>
+		<string>Temaki</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Tempura</string>
+		<key>name</key>
+		<string>Tempura</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Wakame</string>
+		<key>name</key>
+		<string>Wakame</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Wasabi</string>
+		<key>name</key>
+		<string>Wasabi</string>
 	</dict>
 </array>
 </plist>

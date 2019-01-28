@@ -13,6 +13,8 @@
 		92ECA33D21FF404800551169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92ECA33C21FF404800551169 /* Assets.xcassets */; };
 		92ECA34021FF404800551169 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ECA33E21FF404800551169 /* LaunchScreen.storyboard */; };
 		92ECA34B21FF404800551169 /* sushi_cloud_winterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA34A21FF404800551169 /* sushi_cloud_winterTests.swift */; };
+		E3022EDB21FFA3A000EB18D3 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3022EDA21FFA3A000EB18D3 /* NotificationService.swift */; };
+		E3022EDD21FFA41700EB18D3 /* NotificationServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3022EDC21FFA41700EB18D3 /* NotificationServiceDelegate.swift */; };
 		E3B6D19321FF43090000D77C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B6D19221FF43090000D77C /* ViewController.xib */; };
 		E3B6D19B21FF46F40000D77C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D19A21FF46F40000D77C /* Users.swift */; };
 		E3B6D19D21FF47000000D77C /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D19C21FF47000000D77C /* ExampleView.swift */; };
@@ -27,6 +29,7 @@
 		E3B6D1B221FF4DF10000D77C /* plates.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3B6D1B121FF4DF10000D77C /* plates.plist */; };
 		E3B6D1B421FF4FCF0000D77C /* CloudKitFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D1B321FF4FCF0000D77C /* CloudKitFacade.swift */; };
 		E3B6D1B621FF61D30000D77C /* Array+toPlateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D1B521FF61D30000D77C /* Array+toPlateArray.swift */; };
+		E3F9764321FF9E4D0069597A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F9764221FF9E4D0069597A /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,8 @@
 		92ECA34621FF404800551169 /* sushi-cloud-winterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sushi-cloud-winterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92ECA34A21FF404800551169 /* sushi_cloud_winterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sushi_cloud_winterTests.swift; sourceTree = "<group>"; };
 		92ECA34C21FF404800551169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3022EDA21FFA3A000EB18D3 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		E3022EDC21FFA41700EB18D3 /* NotificationServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationServiceDelegate.swift; sourceTree = "<group>"; };
 		E3B6D19221FF43090000D77C /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		E3B6D19A21FF46F40000D77C /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		E3B6D19C21FF47000000D77C /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
@@ -64,6 +69,8 @@
 		E3B6D1B121FF4DF10000D77C /* plates.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = plates.plist; sourceTree = "<group>"; };
 		E3B6D1B321FF4FCF0000D77C /* CloudKitFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitFacade.swift; sourceTree = "<group>"; };
 		E3B6D1B521FF61D30000D77C /* Array+toPlateArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+toPlateArray.swift"; sourceTree = "<group>"; };
+		E3F9764121FF9E480069597A /* sushi-cloud-winter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "sushi-cloud-winter.entitlements"; sourceTree = "<group>"; };
+		E3F9764221FF9E4D0069597A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F9764321FF9E4D0069597A /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +98,7 @@
 				92ECA33121FF404500551169 /* sushi-cloud-winter */,
 				92ECA34921FF404800551169 /* sushi-cloud-winterTests */,
 				92ECA33021FF404500551169 /* Products */,
+				E3B6D1B821FF7FA40000D77C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +114,7 @@
 		92ECA33121FF404500551169 /* sushi-cloud-winter */ = {
 			isa = PBXGroup;
 			children = (
+				E3F9764121FF9E480069597A /* sushi-cloud-winter.entitlements */,
 				E3B6D1AE21FF4CB00000D77C /* Extensions */,
 				E3B6D19121FF42590000D77C /* Services */,
 				E3B6D19021FF424E0000D77C /* Models */,
@@ -126,6 +136,15 @@
 				92ECA34C21FF404800551169 /* Info.plist */,
 			);
 			path = "sushi-cloud-winterTests";
+			sourceTree = "<group>";
+		};
+		E3022ED921FFA38100EB18D3 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				E3022EDA21FFA3A000EB18D3 /* NotificationService.swift */,
+				E3022EDC21FFA41700EB18D3 /* NotificationServiceDelegate.swift */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		E3B6D18E21FF423B0000D77C /* Controllers */ = {
@@ -158,6 +177,7 @@
 		E3B6D19121FF42590000D77C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E3022ED921FFA38100EB18D3 /* Notification */,
 				E3B6D1AB21FF4C120000D77C /* Lists */,
 				E3B6D19E21FF47920000D77C /* CloudKit */,
 			);
@@ -192,6 +212,14 @@
 				E3B6D1B521FF61D30000D77C /* Array+toPlateArray.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E3B6D1B821FF7FA40000D77C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3F9764221FF9E4D0069597A /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +272,14 @@
 				TargetAttributes = {
 					92ECA32E21FF404500551169 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					92ECA34521FF404800551169 = {
 						CreatedOnToolsVersion = 10.1;
@@ -308,7 +344,9 @@
 				92ECA33521FF404500551169 /* ViewController.swift in Sources */,
 				E3B6D1AA21FF4B730000D77C /* Plates.swift in Sources */,
 				92ECA33321FF404500551169 /* AppDelegate.swift in Sources */,
+				E3022EDB21FFA3A000EB18D3 /* NotificationService.swift in Sources */,
 				E3B6D1B021FF4CCA0000D77C /* Bundle+plistPath.swift in Sources */,
+				E3022EDD21FFA41700EB18D3 /* NotificationServiceDelegate.swift in Sources */,
 				E3B6D1B421FF4FCF0000D77C /* CloudKitFacade.swift in Sources */,
 				E3B6D19D21FF47000000D77C /* ExampleView.swift in Sources */,
 			);
@@ -464,8 +502,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "sushi-cloud-winter/sushi-cloud-winter.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z8P97P3QB4;
+				DEVELOPMENT_TEAM = ZB4G8WR697;
 				INFOPLIST_FILE = "sushi-cloud-winter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,6 +513,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "alanvictor.sushi-cloud-winter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -482,8 +523,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "sushi-cloud-winter/sushi-cloud-winter.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z8P97P3QB4;
+				DEVELOPMENT_TEAM = ZB4G8WR697;
 				INFOPLIST_FILE = "sushi-cloud-winter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,6 +534,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "alanvictor.sushi-cloud-winter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -502,7 +546,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NM36QJ4P82;
+				DEVELOPMENT_TEAM = ZB4G8WR697;
 				INFOPLIST_FILE = "sushi-cloud-winterTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -523,7 +567,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NM36QJ4P82;
+				DEVELOPMENT_TEAM = ZB4G8WR697;
 				INFOPLIST_FILE = "sushi-cloud-winterTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

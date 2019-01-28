@@ -10,7 +10,7 @@ import Foundation
 
 struct CloudKitFacade {
     func sendOrder(withPlates plates: [Plates],
-                   andTableNumber tableNumber: Int,
+                   andTableNumber tableNumber: String,
                    result: @escaping (Orders?) -> (),
                    errorCase: @escaping (Error?) -> ()) {
         
@@ -18,4 +18,5 @@ struct CloudKitFacade {
         
         order.save(result: result, errorCase: errorCase)
     }
+    
 }
