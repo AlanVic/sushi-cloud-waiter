@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92ECA33321FF404500551169 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA33221FF404500551169 /* AppDelegate.swift */; };
+		92ECA33521FF404500551169 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA33421FF404500551169 /* ViewController.swift */; };
+		92ECA33821FF404500551169 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ECA33621FF404500551169 /* Main.storyboard */; };
+		92ECA33B21FF404500551169 /* sushi_cloud_winter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA33921FF404500551169 /* sushi_cloud_winter.xcdatamodeld */; };
+		92ECA33D21FF404800551169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92ECA33C21FF404800551169 /* Assets.xcassets */; };
+		92ECA34021FF404800551169 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ECA33E21FF404800551169 /* LaunchScreen.storyboard */; };
+		92ECA34B21FF404800551169 /* sushi_cloud_winterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA34A21FF404800551169 /* sushi_cloud_winterTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92ECA34721FF404800551169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92ECA32721FF404500551169 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92ECA32E21FF404500551169;
+			remoteInfo = "sushi-cloud-winter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92ECA32F21FF404500551169 /* sushi-cloud-winter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sushi-cloud-winter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92ECA33221FF404500551169 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92ECA33421FF404500551169 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92ECA33721FF404500551169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92ECA33A21FF404500551169 /* sushi_cloud_winter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = sushi_cloud_winter.xcdatamodel; sourceTree = "<group>"; };
+		92ECA33C21FF404800551169 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92ECA33F21FF404800551169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92ECA34121FF404800551169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92ECA34621FF404800551169 /* sushi-cloud-winterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sushi-cloud-winterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92ECA34A21FF404800551169 /* sushi_cloud_winterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sushi_cloud_winterTests.swift; sourceTree = "<group>"; };
+		92ECA34C21FF404800551169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92ECA32C21FF404500551169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92ECA34321FF404800551169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92ECA32621FF404500551169 = {
+			isa = PBXGroup;
+			children = (
+				92ECA33121FF404500551169 /* sushi-cloud-winter */,
+				92ECA34921FF404800551169 /* sushi-cloud-winterTests */,
+				92ECA33021FF404500551169 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92ECA33021FF404500551169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92ECA32F21FF404500551169 /* sushi-cloud-winter.app */,
+				92ECA34621FF404800551169 /* sushi-cloud-winterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92ECA33121FF404500551169 /* sushi-cloud-winter */ = {
+			isa = PBXGroup;
+			children = (
+				92ECA33221FF404500551169 /* AppDelegate.swift */,
+				92ECA33421FF404500551169 /* ViewController.swift */,
+				92ECA33621FF404500551169 /* Main.storyboard */,
+				92ECA33C21FF404800551169 /* Assets.xcassets */,
+				92ECA33E21FF404800551169 /* LaunchScreen.storyboard */,
+				92ECA34121FF404800551169 /* Info.plist */,
+				92ECA33921FF404500551169 /* sushi_cloud_winter.xcdatamodeld */,
+			);
+			path = "sushi-cloud-winter";
+			sourceTree = "<group>";
+		};
+		92ECA34921FF404800551169 /* sushi-cloud-winterTests */ = {
+			isa = PBXGroup;
+			children = (
+				92ECA34A21FF404800551169 /* sushi_cloud_winterTests.swift */,
+				92ECA34C21FF404800551169 /* Info.plist */,
+			);
+			path = "sushi-cloud-winterTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92ECA32E21FF404500551169 /* sushi-cloud-winter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92ECA34F21FF404800551169 /* Build configuration list for PBXNativeTarget "sushi-cloud-winter" */;
+			buildPhases = (
+				92ECA32B21FF404500551169 /* Sources */,
+				92ECA32C21FF404500551169 /* Frameworks */,
+				92ECA32D21FF404500551169 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sushi-cloud-winter";
+			productName = "sushi-cloud-winter";
+			productReference = 92ECA32F21FF404500551169 /* sushi-cloud-winter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92ECA34521FF404800551169 /* sushi-cloud-winterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92ECA35221FF404800551169 /* Build configuration list for PBXNativeTarget "sushi-cloud-winterTests" */;
+			buildPhases = (
+				92ECA34221FF404800551169 /* Sources */,
+				92ECA34321FF404800551169 /* Frameworks */,
+				92ECA34421FF404800551169 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92ECA34821FF404800551169 /* PBXTargetDependency */,
+			);
+			name = "sushi-cloud-winterTests";
+			productName = "sushi-cloud-winterTests";
+			productReference = 92ECA34621FF404800551169 /* sushi-cloud-winterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92ECA32721FF404500551169 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Alan Victor Paulino de Oliveira";
+				TargetAttributes = {
+					92ECA32E21FF404500551169 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					92ECA34521FF404800551169 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 92ECA32E21FF404500551169;
+					};
+				};
+			};
+			buildConfigurationList = 92ECA32A21FF404500551169 /* Build configuration list for PBXProject "sushi-cloud-winter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92ECA32621FF404500551169;
+			productRefGroup = 92ECA33021FF404500551169 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92ECA32E21FF404500551169 /* sushi-cloud-winter */,
+				92ECA34521FF404800551169 /* sushi-cloud-winterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92ECA32D21FF404500551169 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92ECA34021FF404800551169 /* LaunchScreen.storyboard in Resources */,
+				92ECA33D21FF404800551169 /* Assets.xcassets in Resources */,
+				92ECA33821FF404500551169 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92ECA34421FF404800551169 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92ECA32B21FF404500551169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92ECA33B21FF404500551169 /* sushi_cloud_winter.xcdatamodeld in Sources */,
+				92ECA33521FF404500551169 /* ViewController.swift in Sources */,
+				92ECA33321FF404500551169 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92ECA34221FF404800551169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92ECA34B21FF404800551169 /* sushi_cloud_winterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92ECA34821FF404800551169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92ECA32E21FF404500551169 /* sushi-cloud-winter */;
+			targetProxy = 92ECA34721FF404800551169 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92ECA33621FF404500551169 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92ECA33721FF404500551169 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		92ECA33E21FF404800551169 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92ECA33F21FF404800551169 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92ECA34D21FF404800551169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92ECA34E21FF404800551169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92ECA35021FF404800551169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM36QJ4P82;
+				INFOPLIST_FILE = "sushi-cloud-winter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "alanvictor.sushi-cloud-winter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92ECA35121FF404800551169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM36QJ4P82;
+				INFOPLIST_FILE = "sushi-cloud-winter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "alanvictor.sushi-cloud-winter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92ECA35321FF404800551169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM36QJ4P82;
+				INFOPLIST_FILE = "sushi-cloud-winterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "alanvictor.sushi-cloud-winterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sushi-cloud-winter.app/sushi-cloud-winter";
+			};
+			name = Debug;
+		};
+		92ECA35421FF404800551169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM36QJ4P82;
+				INFOPLIST_FILE = "sushi-cloud-winterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "alanvictor.sushi-cloud-winterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sushi-cloud-winter.app/sushi-cloud-winter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92ECA32A21FF404500551169 /* Build configuration list for PBXProject "sushi-cloud-winter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92ECA34D21FF404800551169 /* Debug */,
+				92ECA34E21FF404800551169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92ECA34F21FF404800551169 /* Build configuration list for PBXNativeTarget "sushi-cloud-winter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92ECA35021FF404800551169 /* Debug */,
+				92ECA35121FF404800551169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92ECA35221FF404800551169 /* Build configuration list for PBXNativeTarget "sushi-cloud-winterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92ECA35321FF404800551169 /* Debug */,
+				92ECA35421FF404800551169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		92ECA33921FF404500551169 /* sushi_cloud_winter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				92ECA33A21FF404500551169 /* sushi_cloud_winter.xcdatamodel */,
+			);
+			currentVersion = 92ECA33A21FF404500551169 /* sushi_cloud_winter.xcdatamodel */;
+			path = sushi_cloud_winter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 92ECA32721FF404500551169 /* Project object */;
+}
