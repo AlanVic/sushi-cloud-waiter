@@ -13,6 +13,10 @@
 		92ECA33D21FF404800551169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92ECA33C21FF404800551169 /* Assets.xcassets */; };
 		92ECA34021FF404800551169 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ECA33E21FF404800551169 /* LaunchScreen.storyboard */; };
 		92ECA34B21FF404800551169 /* sushi_cloud_winterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA34A21FF404800551169 /* sushi_cloud_winterTests.swift */; };
+		92ECA35721FF48E600551169 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA35521FF48E600551169 /* MenuViewController.swift */; };
+		92ECA35821FF48E600551169 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92ECA35621FF48E600551169 /* MenuViewController.xib */; };
+		92ECA35B21FF4CE700551169 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA35921FF4CE700551169 /* MenuCollectionViewCell.swift */; };
+		92ECA35C21FF4CE700551169 /* MenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92ECA35A21FF4CE700551169 /* MenuCollectionViewCell.xib */; };
 		E3B6D19321FF43090000D77C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B6D19221FF43090000D77C /* ViewController.xib */; };
 		E3B6D19921FF46E30000D77C /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D19821FF46E30000D77C /* CloudKitService.swift */; };
 		E3B6D19B21FF46F40000D77C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D19A21FF46F40000D77C /* Users.swift */; };
@@ -40,6 +44,10 @@
 		92ECA34621FF404800551169 /* sushi-cloud-winterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sushi-cloud-winterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92ECA34A21FF404800551169 /* sushi_cloud_winterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sushi_cloud_winterTests.swift; sourceTree = "<group>"; };
 		92ECA34C21FF404800551169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92ECA35521FF48E600551169 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		92ECA35621FF48E600551169 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		92ECA35921FF4CE700551169 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		92ECA35A21FF4CE700551169 /* MenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCollectionViewCell.xib; sourceTree = "<group>"; };
 		E3B6D19221FF43090000D77C /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		E3B6D19821FF46E30000D77C /* CloudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
 		E3B6D19A21FF46F40000D77C /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
@@ -112,6 +120,8 @@
 			children = (
 				92ECA33421FF404500551169 /* ViewController.swift */,
 				E3B6D19221FF43090000D77C /* ViewController.xib */,
+				92ECA35521FF48E600551169 /* MenuViewController.swift */,
+				92ECA35621FF48E600551169 /* MenuViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -120,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				E3B6D19C21FF47000000D77C /* ExampleView.swift */,
+				92ECA35921FF4CE700551169 /* MenuCollectionViewCell.swift */,
+				92ECA35A21FF4CE700551169 /* MenuCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,7 +235,9 @@
 			files = (
 				92ECA34021FF404800551169 /* LaunchScreen.storyboard in Resources */,
 				E3B6D19321FF43090000D77C /* ViewController.xib in Resources */,
+				92ECA35C21FF4CE700551169 /* MenuCollectionViewCell.xib in Resources */,
 				92ECA33D21FF404800551169 /* Assets.xcassets in Resources */,
+				92ECA35821FF48E600551169 /* MenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +258,8 @@
 				E3B6D19921FF46E30000D77C /* CloudKitService.swift in Sources */,
 				92ECA33B21FF404500551169 /* sushi_cloud_winter.xcdatamodeld in Sources */,
 				E3B6D19B21FF46F40000D77C /* Users.swift in Sources */,
+				92ECA35B21FF4CE700551169 /* MenuCollectionViewCell.swift in Sources */,
+				92ECA35721FF48E600551169 /* MenuViewController.swift in Sources */,
 				92ECA33521FF404500551169 /* ViewController.swift in Sources */,
 				92ECA33321FF404500551169 /* AppDelegate.swift in Sources */,
 				E3B6D19D21FF47000000D77C /* ExampleView.swift in Sources */,
