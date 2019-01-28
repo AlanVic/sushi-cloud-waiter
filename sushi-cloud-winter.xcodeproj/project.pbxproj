@@ -14,6 +14,9 @@
 		92ECA34021FF404800551169 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ECA33E21FF404800551169 /* LaunchScreen.storyboard */; };
 		92ECA34B21FF404800551169 /* sushi_cloud_winterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA34A21FF404800551169 /* sushi_cloud_winterTests.swift */; };
 		E3B6D19321FF43090000D77C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B6D19221FF43090000D77C /* ViewController.xib */; };
+		E3B6D19921FF46E30000D77C /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D19821FF46E30000D77C /* CloudKitService.swift */; };
+		E3B6D19B21FF46F40000D77C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D19A21FF46F40000D77C /* Users.swift */; };
+		E3B6D19D21FF47000000D77C /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6D19C21FF47000000D77C /* ExampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		92ECA34A21FF404800551169 /* sushi_cloud_winterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sushi_cloud_winterTests.swift; sourceTree = "<group>"; };
 		92ECA34C21FF404800551169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3B6D19221FF43090000D77C /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		E3B6D19821FF46E30000D77C /* CloudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
+		E3B6D19A21FF46F40000D77C /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		E3B6D19C21FF47000000D77C /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 		E3B6D18F21FF42440000D77C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3B6D19C21FF47000000D77C /* ExampleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,6 +127,7 @@
 		E3B6D19021FF424E0000D77C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E3B6D19A21FF46F40000D77C /* Users.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 		E3B6D19121FF42590000D77C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E3B6D19821FF46E30000D77C /* CloudKitService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -232,9 +241,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3B6D19921FF46E30000D77C /* CloudKitService.swift in Sources */,
 				92ECA33B21FF404500551169 /* sushi_cloud_winter.xcdatamodeld in Sources */,
+				E3B6D19B21FF46F40000D77C /* Users.swift in Sources */,
 				92ECA33521FF404500551169 /* ViewController.swift in Sources */,
 				92ECA33321FF404500551169 /* AppDelegate.swift in Sources */,
+				E3B6D19D21FF47000000D77C /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
