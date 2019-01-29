@@ -23,9 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //root view controller
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        let firstResponderController = ViewController()
+        let firstResponderController = MenuViewController()
         
-        window?.rootViewController = firstResponderController
+        let navController = UINavigationController(rootViewController: firstResponderController)
+        
+        window?.rootViewController = navController
         window?.makeKeyAndVisible()
         
         return true
