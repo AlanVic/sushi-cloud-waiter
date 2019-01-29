@@ -13,11 +13,11 @@
 		92ECA33D21FF404800551169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92ECA33C21FF404800551169 /* Assets.xcassets */; };
 		92ECA34021FF404800551169 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ECA33E21FF404800551169 /* LaunchScreen.storyboard */; };
 		92ECA34B21FF404800551169 /* sushi_cloud_winterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA34A21FF404800551169 /* sushi_cloud_winterTests.swift */; };
+		92ECA35E21FFBB1100551169 /* DelegateAndDataSourceMenuCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA35D21FFBB1100551169 /* DelegateAndDataSourceMenuCollection.swift */; };
 		A4B8F93C2200732B005C83B8 /* TableManagerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B8F93B2200732B005C83B8 /* TableManagerCollectionViewCell.swift */; };
 		A4B8F93E2200736E005C83B8 /* TableManagerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B8F93D2200736E005C83B8 /* TableManagerCell.xib */; };
 		A4B8F941220079CA005C83B8 /* TableManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B8F93F220079CA005C83B8 /* TableManagerViewController.swift */; };
 		A4B8F942220079CA005C83B8 /* TableManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B8F940220079CA005C83B8 /* TableManagerViewController.xib */; };
-		92ECA35E21FFBB1100551169 /* DelegateAndDataSourceMenuCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA35D21FFBB1100551169 /* DelegateAndDataSourceMenuCollection.swift */; };
 		E3022EDB21FFA3A000EB18D3 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3022EDA21FFA3A000EB18D3 /* NotificationService.swift */; };
 		E3022EDD21FFA41700EB18D3 /* NotificationServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3022EDC21FFA41700EB18D3 /* NotificationServiceDelegate.swift */; };
 		E3022EEE2200735E00EB18D3 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3022EEC2200735E00EB18D3 /* MenuCollectionViewCell.swift */; };
@@ -62,11 +62,11 @@
 		92ECA34621FF404800551169 /* sushi-cloud-winterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sushi-cloud-winterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92ECA34A21FF404800551169 /* sushi_cloud_winterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sushi_cloud_winterTests.swift; sourceTree = "<group>"; };
 		92ECA34C21FF404800551169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92ECA35D21FFBB1100551169 /* DelegateAndDataSourceMenuCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateAndDataSourceMenuCollection.swift; sourceTree = "<group>"; };
 		A4B8F93B2200732B005C83B8 /* TableManagerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableManagerCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4B8F93D2200736E005C83B8 /* TableManagerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableManagerCell.xib; sourceTree = "<group>"; };
 		A4B8F93F220079CA005C83B8 /* TableManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableManagerViewController.swift; sourceTree = "<group>"; };
 		A4B8F940220079CA005C83B8 /* TableManagerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableManagerViewController.xib; sourceTree = "<group>"; };
-		92ECA35D21FFBB1100551169 /* DelegateAndDataSourceMenuCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateAndDataSourceMenuCollection.swift; sourceTree = "<group>"; };
 		E3022EDA21FFA3A000EB18D3 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		E3022EDC21FFA41700EB18D3 /* NotificationServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationServiceDelegate.swift; sourceTree = "<group>"; };
 		E3022EEC2200735E00EB18D3 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };

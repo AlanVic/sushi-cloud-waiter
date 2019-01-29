@@ -46,6 +46,11 @@ class NotificationService: NSObject, UNUserNotificationCenterDelegate {
         print(userInfo)
     }
     
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        completionHandler([.alert, .badge, .sound])
+    }
+    
     
     /// Chamado no didRegisterForRemoteNotificationsWithDeviceToken do Appdelegate
     ///

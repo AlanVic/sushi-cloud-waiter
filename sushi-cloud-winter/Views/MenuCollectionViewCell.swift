@@ -29,6 +29,12 @@ class MenuCollectionViewCell: UICollectionViewCell {
             photoDish.image = UIImage(imageLiteralResourceName: "defaultSushi")
         }
         nameDish.text = plate?.name
+        
+        if plate?.selected ?? false {
+            checkBox.isHidden = false
+        } else {
+            checkBox.isHidden = true
+        }
     }
     
     func selectedCheckbox(){

@@ -11,7 +11,7 @@ import Foundation
 extension Array where Element: Plates {
     func plateString() -> String {
         return self.reduce("") { (currentContent, plate) -> String in
-            return "\(currentContent), \(plate.name)"
+            return "\(currentContent) \(plate.name) "
         }
     }
 }

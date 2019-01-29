@@ -37,6 +37,7 @@ extension TableManagerViewController: UICollectionViewDelegate {
         let menuViewController = MenuViewController()
         
         menuViewController.title = "Mesa \(indexPath.row + 1)"
+        menuViewController.tableSelected = "\(indexPath.row + 1)"
         
         self.navigationController?.pushViewController(menuViewController, animated: true)
     }

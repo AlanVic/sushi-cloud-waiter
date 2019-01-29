@@ -36,22 +36,53 @@ class MenuViewController: UIViewController {
     func setupCollectionView(){
         layoutCollectionView.minimumInteritemSpacing = 8
         layoutCollectionView.minimumLineSpacing = 8
-        let widthCell = (self.view.bounds.width / 2) - 8
+        let widthCell = (self.menuCollectionView.bounds.width / 2) - 8
         let heightCell = widthCell
         layoutCollectionView.itemSize = CGSize(width: widthCell, height: heightCell)
     }
 
+    func showError() {
+        let alert = UIAlertController(title: "Error", message: "Could not save", preferredStyle: .alert)
+        
+        
+        let cancelAction = UIAlertAction.init(title: "OK", style: .cancel, handler: { (action) in
+            self.navigationController?.popViewController(animated: true)
+        })
+        
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func sucessAlert() {
+        let alert = UIAlertController(title: "Otimo", message: "You saved a order", preferredStyle: .alert)
+        
+        
+        let cancelAction = UIAlertAction.init(title: "OK", style: .cancel, handler: { (action) in
+            self.navigationController?.popViewController(animated: true)
+        })
+        
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
     @objc func tapInSaveButton(){
-        if let cells = menuCollectionView.visibleCells as? [MenuCollectionViewCell]{
-            let plates = cells.compactMap { (cell) -> Plates? in
-                if let selected = cell.plate?.selected, selected{
-                    return cell.plate!
-                }else{
-                    return nil
-                }
-            }
-            print(plates)
+        let plates = delegateAndDataSourceMenuCollection.plates.filter { (plate) -> Bool in
+            return plate.selected
+        }
+        
+        CloudKitFacade.init().sendOrder(withPlates: plates, andTableNumber: self.tableSelected, result: { (orders) in
             
+            DispatchQueue.main.async {
+                self.sucessAlert()
+            }
+            
+            
+        }) { (error) in
+            DispatchQueue.main.async {
+                self.showError()
+            }
         }
         
         

@@ -22,9 +22,19 @@ struct CloudKitFacade {
                    result: @escaping (Orders?) -> (),
                    errorCase: @escaping (Error?) -> ()) {
         
-        let order = Orders.init(withPlates: plates, andTable: tableNumber)
+        var order = Orders.init(withPlates: plates, andTable: tableNumber)
         
-        order.save(result: result, errorCase: errorCase)
+        if let userReference = CloudKitService.shared.userReference {
+            order.waiter = userReference
+            order.save(result: result, errorCase: errorCase)
+        } else {
+            CloudKitService.shared.discoverUserId(sucessCase: { (userReference) in
+                order.waiter = userReference
+                order.save(result: result, errorCase: errorCase)
+            }) { (error) in
+                errorCase(error)
+            }
+        }
     }
     
 }
