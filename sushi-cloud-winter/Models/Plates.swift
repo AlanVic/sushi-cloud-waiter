@@ -9,8 +9,14 @@
 import Foundation
 import UIKit
 
-struct Plates {
+class Plates {
     var image: UIImage?
     var name: String
     var selected: Bool
+    
+    init(withName name: String, andImage image: UIImage?, selected:Bool = false) {
+        self.image = image
+        self.name = name
+        self.selected = selected
+    }
 }
