@@ -12,4 +12,5 @@ import UIKit
 struct Plates {
     var image: UIImage?
     var name: String
+    var selected: Bool
 }

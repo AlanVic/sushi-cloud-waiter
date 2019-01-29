@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="sushi_cloud_winter" customModuleProvider="target">
             <connections>
+                <outlet property="layoutCollectionView" destination="Seh-qv-htC" id="XBl-Ty-gjQ"/>
                 <outlet property="menuCollectionView" destination="fTK-nZ-oNS" id="2v1-Ny-1Ci"/>
                 <outlet property="saveButton" destination="2U9-45-7Ng" id="aUp-jd-A07"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

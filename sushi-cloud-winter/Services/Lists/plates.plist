@@ -4,6 +4,12 @@
 <array>
 	<dict>
 		<key>image</key>
+		<string>prato2</string>
+		<key>name</key>
+		<string>Sushi Salame</string>
+	</dict>
+	<dict>
+		<key>image</key>
 		<string>prato1</string>
 		<key>name</key>
 		<string>Sushizinho</string>

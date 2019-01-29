@@ -20,7 +20,7 @@ class PlistService {
                     plateImage = UIImage.init(named: plateImageName)
                 }
                 if let plateName = plateDescription["name"] {
-                    let plate = Plates.init(image: plateImage, name: plateName)
+                    let plate = Plates.init(image: plateImage, name: plateName, selected: false)
                     plates.append(plate)
                 }
             }
