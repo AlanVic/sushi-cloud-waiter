@@ -34,7 +34,11 @@ extension TableManagerViewController: UICollectionViewDelegateFlowLayout {
 
 extension TableManagerViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row + 1)
+        let menuViewController = MenuViewController()
+        
+        menuViewController.title = "Mesa \(indexPath.row + 1)"
+        
+        self.navigationController?.pushViewController(menuViewController, animated: true)
     }
 }
 

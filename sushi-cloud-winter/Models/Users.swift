@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import CloudKit
+
+struct Users: CloudObject {
+    
+    var recordID: CKRecord.ID?
+    
+    init() {
+        
+    }
+    
+    init(ckRecord: CKRecord) {
+        self.recordID = ckRecord.recordID
+    }
+}

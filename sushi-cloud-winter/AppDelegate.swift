@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,19 +17,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        UNUserNotificationCenter.current().delegate = NotificationService.shared
+        NotificationService.shared.requestNotificationAuthorization()
+        
+        //root view controller
         window = UIWindow.init(frame: UIScreen.main.bounds)
+
         let firstResponderController = TableManagerViewController()
         
         let navController = UINavigationController(rootViewController: firstResponderController)
         navController.navigationBar.prefersLargeTitles = true
         firstResponderController.title = "Tables"
-        
+
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
         
         return true
     }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        
+        NotificationService.shared.didRegisterForRemoteNotificationsWithDeviceToken(deviceToken: deviceToken)
+    }
 
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        NotificationService.shared.didReceivBackgroundNotification(userInfo: userInfo)
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

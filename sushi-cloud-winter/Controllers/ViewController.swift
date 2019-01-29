@@ -14,9 +14,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let plates = [Plates.init(withName: "Nigiri", andImage: nil), Plates.init(withName: "Wasabi", andImage: nil)]
+        
+        let facade = CloudKitFacade.init()
+        facade.sendOrder(withPlates: plates, andTableNumber: "23", result: { (orders) in
+            
+            print(orders)
+        }) { (error) in
+            
+            print(error)
+        }
         
     }
-
-
 }
 
