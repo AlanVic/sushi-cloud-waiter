@@ -17,9 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        let firstResponderController = ViewController()
+        let firstResponderController = TableManagerViewController()
         
-        window?.rootViewController = firstResponderController
+        let navController = UINavigationController(rootViewController: firstResponderController)
+        navController.navigationBar.prefersLargeTitles = true
+        firstResponderController.title = "Tables"
+        
+        window?.rootViewController = navController
         window?.makeKeyAndVisible()
         
         return true

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="KET-xB-QXh" customClass="TableManagerCollectionViewCell" customModule="sushi_cloud_winter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtm-MD-Xjo">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Jtm-MD-Xjo" firstAttribute="top" secondItem="KET-xB-QXh" secondAttribute="top" id="4Ov-3R-UIY"/>
+                <constraint firstItem="Jtm-MD-Xjo" firstAttribute="leading" secondItem="KET-xB-QXh" secondAttribute="leading" id="EOF-ea-1So"/>
+                <constraint firstAttribute="trailing" secondItem="Jtm-MD-Xjo" secondAttribute="trailing" id="fz6-e4-HOV"/>
+                <constraint firstAttribute="bottom" secondItem="Jtm-MD-Xjo" secondAttribute="bottom" id="kVc-w8-FV3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="l3N-IK-gXY"/>
+            <size key="customSize" width="168" height="107"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="75"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="tableLabel" destination="Jtm-MD-Xjo" id="rit-hR-kvI"/>
+            </connections>
+            <point key="canvasLocation" x="-304" y="165.51724137931035"/>
+        </collectionViewCell>
+    </objects>
+</document>
