@@ -17,16 +17,16 @@ class NotificationService: NSObject, UNUserNotificationCenterDelegate {
     var delegate: NotificationServiceDelegate?
     
     /// Pergunta ao usuario sobre a permissao para notificacoes remotas
-    func requestPushAuth() {
+    func requestNotificationAuthorization() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
             if granted {
-                self.getPushSettings()
+                self.registerForRemoteNotifications()
             }
         }
     }
     
     /// verifica autorização para envio de notificacoes remotas e as registra
-    func getPushSettings() {
+    func registerForRemoteNotifications() {
         UNUserNotificationCenter.current().getNotificationSettings { (settings) in
             if settings.authorizationStatus == .authorized {
                 DispatchQueue.main.async {
@@ -40,18 +40,28 @@ class NotificationService: NSObject, UNUserNotificationCenterDelegate {
     /// Chamado no didReceiveRemoteNotification do AppDelegate
     ///
     /// - Parameter userInfo: user info da notificacao
-    func receivedBackgroundNotification(userInfo: [AnyHashable : Any]) {
+    func didReceivBackgroundNotification(userInfo: [AnyHashable : Any]) {
         
     }
     
+    
+    /// Chamado no didRegisterForRemoteNotificationsWithDeviceToken do Appdelegate
+    ///
+    /// - Parameter deviceToken: o token de push
+    func didRegisterForRemoteNotificationsWithDeviceToken(deviceToken: Data) {
+        self.subscribeToSubscription()
+    }
+    
+    
+    /// Verifica se o userReference já foi pego, se não, ele é pego. Depois de obter o userReference, usa-o para subscrever a subscription
     func subscribeToSubscription() {
-        
         if let userReference = CloudKitService.shared.userReference {
             
             let orderSubscription = formatOrderSubscription(userReference: userReference)
             saveSubscriptionToCloud(subscription: orderSubscription)
         } else {
             CloudKitService.shared.discoverUserId(sucessCase: { (userReference) in
+                
                 let orderSubscription = self.formatOrderSubscription(userReference: userReference)
                 self.saveSubscriptionToCloud(subscription: orderSubscription)
             }) { (error) in
@@ -60,12 +70,18 @@ class NotificationService: NSObject, UNUserNotificationCenterDelegate {
         }
     }
     
+    
     func saveSubscriptionToCloud(subscription: CKQuerySubscription) {
         CKContainer.default().publicCloudDatabase.save(subscription) { (_, error) in
             print(error)
         }
     }
     
+    
+    /// Cria a subscription e a notification info para uma notificação silenciosa
+    ///
+    /// - Parameter userReference: o user reference, que indica que garçom fez o pedido
+    /// - Returns: a subscription
     func formatOrderSubscription(userReference: CKRecord.Reference) -> CKQuerySubscription {
         
         let predicate = NSPredicate.init(format: "waiter == %@", userReference)

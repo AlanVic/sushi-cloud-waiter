@@ -248,29 +248,3 @@ extension CloudObject {
         }
     }
 }
-
-//struct CloudCoder {
-//    func decode<T: CloudObject>(fromRecord record: CKRecord, fromClass: T.Type) throws -> T {
-//        var decodedObject = T.init()
-//        let mirror = Mirror.init(reflecting: decodedObject)
-//
-//        var tempDict: [String: Any] = [:]
-//
-//        for attr in mirror.children {
-//            if let attrName = attr.label,
-//               let recordValue = record[attrName] {
-//                tempDict[attrName] = recordValue
-//
-//                //setAssociatedObject_glue()
-//                //decodedObject[keyPath: \T.title]
-//                //let a = String.init()
-//
-//            }
-//        }
-//
-//        //let json = try JSONSerialization.data(withJSONObject: tempDict)
-//        //decodedObject = try JSONDecoder().decode(fromClass.self, from: json)
-//
-//        return decodedObject
-//    }
-//}
