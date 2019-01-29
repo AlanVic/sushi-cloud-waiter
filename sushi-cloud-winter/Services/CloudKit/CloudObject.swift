@@ -58,7 +58,7 @@ extension CloudObject {
     ///   - database: a database da qual deletar, padrão é a publica do container padrão
     ///   - result: completion com o resultado
     ///   - errorCase: completion com erro
-    func delete(fromDatabase database: CKDatabase = CKContainer.default().publicCloudDatabase,
+    func delete(fromDatabase database: CKDatabase = CloudKitService.shared.container.publicCloudDatabase,
                 result: @escaping (CKRecord.ID?) -> (),
                 errorCase: @escaping (Error?) -> ()) {
         
@@ -89,7 +89,7 @@ extension CloudObject {
     ///   - database: a database em que salvar, padrão é a publica do container padrao
     ///   - result: completion de sucesso
     ///   - errorCase: completion de erro
-    func save(inDatabase database: CKDatabase = CKContainer.default().publicCloudDatabase,
+    func save(inDatabase database: CKDatabase = CloudKitService.shared.container.publicCloudDatabase,
               result: @escaping (Self?) -> (),
               errorCase: @escaping (Error?) -> ()) {
         
@@ -122,7 +122,7 @@ extension CloudObject {
     ///   - result: completion de resultado
     ///   - errorCase: completion de erro
     static func get(byID id: CKRecord.ID, inDatabase
-                    database: CKDatabase = CKContainer.default().publicCloudDatabase,
+                    database: CKDatabase = CloudKitService.shared.container.publicCloudDatabase,
                     result: @escaping (Self?) -> (),
                     errorCase: @escaping (Error?) -> ()) {
     
@@ -152,7 +152,7 @@ extension CloudObject {
     static func findBy(field: String,
                        _ operation: MounterOperation,
                        _ value: Any,
-                       inDatabase database: CKDatabase = CKContainer.default().publicCloudDatabase,
+                       inDatabase database: CKDatabase = CloudKitService.shared.container.publicCloudDatabase,
                        withSortDescriptors sortDescriptors: [NSSortDescriptor] = [],
                        result: @escaping ([CKRecord]?) -> (),
                        errorCase: @escaping (Error) -> ()) {
@@ -172,7 +172,7 @@ extension CloudObject {
     static func findBy(field: String,
                 _ operation: MounterOperation,
                 _ value: Any,
-                inDatabase database: CKDatabase = CKContainer.default().publicCloudDatabase,
+                inDatabase database: CKDatabase = CloudKitService.shared.container.publicCloudDatabase,
                 withSortDescriptors sortDescriptors: [NSSortDescriptor] = [],
                 result: @escaping ([Self]?) -> (),
                 errorCase: @escaping (Error) -> ()) {
@@ -202,7 +202,7 @@ extension CloudObject {
     ///   - database: a database na qual procurar, padrao é a publica do container padrao
     ///   - result: completion de sucesso
     ///   - errorCase: completion de erro
-    static func all(inDatabase database: CKDatabase = CKContainer.default().publicCloudDatabase,
+    static func all(inDatabase database: CKDatabase = CloudKitService.shared.container.publicCloudDatabase,
                     withSortDescriptors sortDescriptors: [NSSortDescriptor] = [],
                     result: @escaping ([CKRecord]?) -> (),
                     errorCase: @escaping (Error) -> ()) {
@@ -226,7 +226,8 @@ extension CloudObject {
     ///   - database: a database na qual procurar, padrao é a publica do container padrao
     ///   - result: completion de sucesso
     ///   - errorCase: completion de erro
-    static func all(inDatabase database: CKDatabase = CKContainer.default().publicCloudDatabase,
+    
+    static func all(inDatabase database: CKDatabase = CloudKitService.shared.container.publicCloudDatabase,
                     withSortDescriptors sortDescriptors: [NSSortDescriptor] = [],
                     result: @escaping ([Self]?) -> (),
                     errorCase: @escaping (Error) -> ()) {

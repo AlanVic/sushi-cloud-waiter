@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //root view controller
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        let firstResponderController = MenuViewController()
+        let firstResponderController = ViewController()
         
         let navController = UINavigationController(rootViewController: firstResponderController)
         

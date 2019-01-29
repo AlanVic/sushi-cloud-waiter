@@ -42,6 +42,7 @@ class NotificationService: NSObject, UNUserNotificationCenterDelegate {
     /// - Parameter userInfo: user info da notificacao
     func didReceivBackgroundNotification(userInfo: [AnyHashable : Any]) {
         
+        print(userInfo)
     }
     
     
@@ -72,7 +73,8 @@ class NotificationService: NSObject, UNUserNotificationCenterDelegate {
     
     
     func saveSubscriptionToCloud(subscription: CKQuerySubscription) {
-        CKContainer.default().publicCloudDatabase.save(subscription) { (_, error) in
+        CloudKitService.shared.container.publicCloudDatabase.save(subscription) { (_, error) in
+            
             print(error)
         }
     }
@@ -86,15 +88,15 @@ class NotificationService: NSObject, UNUserNotificationCenterDelegate {
         
         let predicate = NSPredicate.init(format: "waiter == %@", userReference)
         
-        let subscription = CKQuerySubscription.init(recordType: "Order",
+        let subscription = CKQuerySubscription.init(recordType: "Orders",
                                                     predicate: predicate,
                                                     subscriptionID: "OrderSub",
                                                     options: .firesOnRecordUpdate)
         
         let notification = CKSubscription.NotificationInfo.init()
-        notification.alertBody = ""
+        notification.alertBody = "Pedido Finalizado"
         notification.shouldBadge = true
-        notification.shouldSendContentAvailable = true
+        //notification.shouldSendContentAvailable = true
         
         subscription.notificationInfo = notification
         

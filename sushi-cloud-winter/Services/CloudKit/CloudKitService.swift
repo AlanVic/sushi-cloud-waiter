@@ -14,6 +14,10 @@ class CloudKitService {
     
     var userReference: CKRecord.Reference?
     
+    var container: CKContainer = {
+        return CKContainer.init(identifier: "iCloud.com.thalys.sushi-cloud")
+    }()
+    
     private init() {
         
     }
@@ -25,7 +29,7 @@ class CloudKitService {
     ///   - sucessCase: caso de sucesso
     ///   - errorCase: caso de erro
     func discoverUserId(
-        container: CKContainer = CKContainer.default(),
+        container: CKContainer = CloudKitService.shared.container,
         sucessCase: @escaping (CKRecord.Reference) -> (),
         errorCase: @escaping (Error?) -> ()) {
         
