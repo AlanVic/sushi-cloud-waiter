@@ -15,6 +15,7 @@ struct Orders: CloudObject {
     var orderDescription: String?
     var tableNumber: String?
     var waiter: CKRecord.Reference?
+    var hasFinished: Int?
     
     init() {
         
@@ -22,18 +23,21 @@ struct Orders: CloudObject {
     
     init(ckRecord: CKRecord) {
         self.orderDescription = ckRecord["orderDescription"]
-        self.tableNumber = ckRecord["table"]
+        self.tableNumber = ckRecord["tableNumber"]
         self.waiter = ckRecord["waiter"]
+        self.hasFinished = ckRecord["hasFinished"]
         self.recordID = ckRecord.recordID
     }
     
     init(withOrderDescription orderDescription: String, andTable table: String) {
         self.orderDescription = orderDescription
         self.tableNumber = table
+        self.hasFinished = 0
     }
     
     init(withPlates plates: [Plates], andTable table: String) {
         self.orderDescription = plates.plateString()
         self.tableNumber = table
+        self.hasFinished = 0
     }
 }

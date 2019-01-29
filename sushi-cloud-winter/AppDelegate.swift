@@ -41,6 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         
         NotificationService.shared.didReceivBackgroundNotification(userInfo: userInfo)
+        
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

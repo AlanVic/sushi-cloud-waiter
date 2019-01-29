@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 
 class ViewController: UIViewController {
 
@@ -14,15 +15,33 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let plates = [Plates.init(withName: "Nigiri", andImage: nil), Plates.init(withName: "Wasabi", andImage: nil)]
+//        Orders.findBy(field: "tableNumber", .equalTo, "1", result: { (records: [CKRecord]?) in
+//            if let firstrc = records?.first {
+//                firstrc["orderDescription"] = "tete"
+//
+//                CloudKitService.shared.container.publicCloudDatabase.save(firstrc, completionHandler: { (record, error) in
+//
+//                    print("ok")
+//                })
+//            }
+//        }) { (error) in
+//
+//            print(error)
+//        }
         
-        let facade = CloudKitFacade.init()
-        facade.sendOrder(withPlates: plates, andTableNumber: "23", result: { (orders) in
+        var or = Orders.init(withOrderDescription: "tralal2", andTable: "34")
+        
+        CloudKitService.shared.discoverUserId(sucessCase: { (reference) in
+            or.waiter = reference
             
-            print(orders)
+            or.save(result: { (orders) in
+                
+                print("ok")
+            }) { (error) in
+                print("ok")
+            }
         }) { (error) in
             
-            print(error)
         }
         
     }

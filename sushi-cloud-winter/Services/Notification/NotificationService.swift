@@ -42,6 +42,7 @@ class NotificationService: NSObject, UNUserNotificationCenterDelegate {
     /// - Parameter userInfo: user info da notificacao
     func didReceivBackgroundNotification(userInfo: [AnyHashable : Any]) {
         
+        
         print(userInfo)
     }
     
@@ -96,7 +97,7 @@ class NotificationService: NSObject, UNUserNotificationCenterDelegate {
         let notification = CKSubscription.NotificationInfo.init()
         notification.alertBody = "Pedido Finalizado"
         notification.shouldBadge = true
-        //notification.shouldSendContentAvailable = true
+        notification.shouldSendContentAvailable = true
         
         subscription.notificationInfo = notification
         
