@@ -12,20 +12,49 @@ class MenuViewController: UIViewController {
 
     @IBOutlet weak var menuCollectionView: UICollectionView!
     @IBOutlet weak var saveButton: UIView!
+    @IBOutlet weak var layoutCollectionView: UICollectionViewFlowLayout!
     
+    var delegateAndDataSourceMenuCollection = DelegateAndDataSourceMenuCollection()
+    var tableSelected:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        menuCollectionView.delegate = delegateAndDataSourceMenuCollection
+        menuCollectionView.dataSource = delegateAndDataSourceMenuCollection
+        
         let tapSaveButton = UITapGestureRecognizer(target: self, action: #selector(tapInSaveButton))
 
         saveButton.addGestureRecognizer(tapSaveButton)
+        
+        menuCollectionView.register(UINib(nibName: "MenuCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
+        
+        self.setupCollectionView()
         // Do any additional setup after loading the view.
     }
 
+    func setupCollectionView(){
+        layoutCollectionView.minimumInteritemSpacing = 8
+        layoutCollectionView.minimumLineSpacing = 8
+        let widthCell = (self.view.bounds.width / 2) - 8
+        let heightCell = widthCell
+        layoutCollectionView.itemSize = CGSize(width: widthCell, height: heightCell)
+    }
 
     @objc func tapInSaveButton(){
-        print("Tap in save Button")
+        if let cells = menuCollectionView.visibleCells as? [MenuCollectionViewCell]{
+            let plates = cells.compactMap { (cell) -> Plates? in
+                if let selected = cell.plate?.selected, selected{
+                    return cell.plate!
+                }else{
+                    return nil
+                }
+            }
+            print(plates)
+            
+        }
+        
+        
     }
     /*
     // MARK: - Navigation
@@ -38,3 +67,11 @@ class MenuViewController: UIViewController {
     */
 
 }
+//
+//extension MenuViewController: UICollectionViewDelegateFlowLayout{
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let width = self.view.bounds.width / 2
+//
+//        return CGSize(width: width, height: width)
+//    }
+//}

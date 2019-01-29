@@ -14,9 +14,30 @@ class MenuCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var nameDish: UILabel!
     @IBOutlet weak var checkBox: UIImageView!
     
+    var plate:Plates?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
+    func loadCell(){
+        if let image = plate?.image{
+            photoDish.image = image
+        }else{
+            photoDish.image = UIImage(imageLiteralResourceName: "defaultSushi")
+        }
+        nameDish.text = plate?.name
+    }
+    
+    func selectedCheckbox(){
+        if let selected = plate?.selected,selected{
+            plate!.selected = false
+            checkBox.isHidden = true
+        }else{
+            plate!.selected = true
+            checkBox.isHidden = false
+        }
+    }
 }

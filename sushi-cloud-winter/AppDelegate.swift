@@ -23,10 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //root view controller
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        let firstResponderController = ViewController()
+
+        let firstResponderController = TableManagerViewController()
         
         let navController = UINavigationController(rootViewController: firstResponderController)
-        
+        navController.navigationBar.prefersLargeTitles = true
+        firstResponderController.title = "Tables"
+
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
         

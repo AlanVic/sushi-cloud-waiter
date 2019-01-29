@@ -13,6 +13,11 @@
 		92ECA33D21FF404800551169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92ECA33C21FF404800551169 /* Assets.xcassets */; };
 		92ECA34021FF404800551169 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ECA33E21FF404800551169 /* LaunchScreen.storyboard */; };
 		92ECA34B21FF404800551169 /* sushi_cloud_winterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA34A21FF404800551169 /* sushi_cloud_winterTests.swift */; };
+		A4B8F93C2200732B005C83B8 /* TableManagerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B8F93B2200732B005C83B8 /* TableManagerCollectionViewCell.swift */; };
+		A4B8F93E2200736E005C83B8 /* TableManagerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B8F93D2200736E005C83B8 /* TableManagerCell.xib */; };
+		A4B8F941220079CA005C83B8 /* TableManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B8F93F220079CA005C83B8 /* TableManagerViewController.swift */; };
+		A4B8F942220079CA005C83B8 /* TableManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B8F940220079CA005C83B8 /* TableManagerViewController.xib */; };
+		92ECA35E21FFBB1100551169 /* DelegateAndDataSourceMenuCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA35D21FFBB1100551169 /* DelegateAndDataSourceMenuCollection.swift */; };
 		E3022EDB21FFA3A000EB18D3 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3022EDA21FFA3A000EB18D3 /* NotificationService.swift */; };
 		E3022EDD21FFA41700EB18D3 /* NotificationServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3022EDC21FFA41700EB18D3 /* NotificationServiceDelegate.swift */; };
 		E3022EEE2200735E00EB18D3 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3022EEC2200735E00EB18D3 /* MenuCollectionViewCell.swift */; };
@@ -57,6 +62,11 @@
 		92ECA34621FF404800551169 /* sushi-cloud-winterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sushi-cloud-winterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92ECA34A21FF404800551169 /* sushi_cloud_winterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sushi_cloud_winterTests.swift; sourceTree = "<group>"; };
 		92ECA34C21FF404800551169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4B8F93B2200732B005C83B8 /* TableManagerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableManagerCollectionViewCell.swift; sourceTree = "<group>"; };
+		A4B8F93D2200736E005C83B8 /* TableManagerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableManagerCell.xib; sourceTree = "<group>"; };
+		A4B8F93F220079CA005C83B8 /* TableManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableManagerViewController.swift; sourceTree = "<group>"; };
+		A4B8F940220079CA005C83B8 /* TableManagerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableManagerViewController.xib; sourceTree = "<group>"; };
+		92ECA35D21FFBB1100551169 /* DelegateAndDataSourceMenuCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateAndDataSourceMenuCollection.swift; sourceTree = "<group>"; };
 		E3022EDA21FFA3A000EB18D3 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		E3022EDC21FFA41700EB18D3 /* NotificationServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationServiceDelegate.swift; sourceTree = "<group>"; };
 		E3022EEC2200735E00EB18D3 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -162,6 +172,8 @@
 				E3022EF12200736D00EB18D3 /* MenuViewController.xib */,
 				92ECA33421FF404500551169 /* ViewController.swift */,
 				E3B6D19221FF43090000D77C /* ViewController.xib */,
+				A4B8F93F220079CA005C83B8 /* TableManagerViewController.swift */,
+				A4B8F940220079CA005C83B8 /* TableManagerViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,6 +184,8 @@
 				E3022EEC2200735E00EB18D3 /* MenuCollectionViewCell.swift */,
 				E3022EED2200735E00EB18D3 /* MenuCollectionViewCell.xib */,
 				E3B6D19C21FF47000000D77C /* ExampleView.swift */,
+				A4B8F93B2200732B005C83B8 /* TableManagerCollectionViewCell.swift */,
+				A4B8F93D2200736E005C83B8 /* TableManagerCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +196,7 @@
 				E3B6D19A21FF46F40000D77C /* Users.swift */,
 				E3B6D1A721FF49130000D77C /* Orders.swift */,
 				E3B6D1A921FF4B730000D77C /* Plates.swift */,
+				92ECA35D21FFBB1100551169 /* DelegateAndDataSourceMenuCollection.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -326,9 +341,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B8F942220079CA005C83B8 /* TableManagerViewController.xib in Resources */,
 				92ECA34021FF404800551169 /* LaunchScreen.storyboard in Resources */,
 				E3022EF32200736D00EB18D3 /* MenuViewController.xib in Resources */,
 				E3B6D19321FF43090000D77C /* ViewController.xib in Resources */,
+				A4B8F93E2200736E005C83B8 /* TableManagerCell.xib in Resources */,
 				E3022EEF2200735E00EB18D3 /* MenuCollectionViewCell.xib in Resources */,
 				92ECA33D21FF404800551169 /* Assets.xcassets in Resources */,
 				E3B6D1B221FF4DF10000D77C /* plates.plist in Resources */,
@@ -349,6 +366,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B8F93C2200732B005C83B8 /* TableManagerCollectionViewCell.swift in Sources */,
+				A4B8F941220079CA005C83B8 /* TableManagerViewController.swift in Sources */,
 				E3B6D1B621FF61D30000D77C /* Array+toPlateArray.swift in Sources */,
 				E3B6D1A521FF47C70000D77C /* CloudKitService.swift in Sources */,
 				E3B6D1A321FF47C70000D77C /* CloudObject.swift in Sources */,
@@ -357,6 +376,7 @@
 				92ECA33B21FF404500551169 /* sushi_cloud_winter.xcdatamodeld in Sources */,
 				E3B6D1A621FF47C70000D77C /* MounterOperation.swift in Sources */,
 				E3B6D19B21FF46F40000D77C /* Users.swift in Sources */,
+				92ECA35E21FFBB1100551169 /* DelegateAndDataSourceMenuCollection.swift in Sources */,
 				E3B6D1A421FF47C70000D77C /* PredicateMounter.swift in Sources */,
 				92ECA33521FF404500551169 /* ViewController.swift in Sources */,
 				E3B6D1AA21FF4B730000D77C /* Plates.swift in Sources */,

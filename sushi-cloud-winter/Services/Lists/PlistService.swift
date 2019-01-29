@@ -27,7 +27,7 @@ class PlistService {
                 }
                 
                 if let plateName = plateDescription["name"] {
-                    let plate = Plates.init(withName: plateName, andImage: plateImage)
+                    let plate = Plates.init(withName: plateName, andImage: plateImage, selected: false)
                     plates.append(plate)
                 }
             }
